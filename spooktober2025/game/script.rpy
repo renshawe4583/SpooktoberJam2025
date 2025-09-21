@@ -9,7 +9,7 @@ label start:
 
     scene black
 
-    "This is a story about murder..."
+    "This is a story about murder....."
     
     scene bg gandalf
 
