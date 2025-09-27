@@ -14,15 +14,11 @@ transform slowdissolve:
 
 label start:
 
-    play music main_theme if_changed
+    #play music main_theme if_changed
     
     scene bg library
 
-    ###voice test###
-    #scene black
-    voice "erin/name.MP3"
-    s "My name is Inigo Montoya. You killed my father. Prepare to die."
-    
+   
     "Curious to what treasures awaited in this little lost library, Penelope pulled at the knob screwed onto the little door, but it didn't budge. She furrowed her brow and tugged harder. The rusted metal hinges creaked ominously, greeting her entry."
 
     "A cloud of dust puffed in her face and she coughed, waving it away. Inside were two rows of weathered books, stacked neatly end to end, each one looking as old as the last. She brushed away some grime, tilting her head to get a better look at the titles along the edges."
@@ -58,7 +54,7 @@ label start:
 
     p "A-bah...ah ga ga..."
     voice "Stella/Stella003.MP3"
-    s "Oh! Mercy me, you must be mortified! I'm sorry for the little scare. Here, let me help you up."
+    s "Oh, mercy me! You must be mortified. I'm sorry for the little scare. Here, let me help you up."
 
     "She gracefully bent down and extended a hand towards Penelope. Penelope took it without thinking, still awestruck. As she reached out, the woman's hand felt smooth and cold to the touch."
     voice "Stella/Stella004.MP3"
@@ -157,7 +153,8 @@ label start:
     s "{i}Gasp,{/i} I remember when that was the local sock hop bowlin' alley. Over there, they used to sell everything from vacuums to washers, everything an average housewife would need."
     voice "Stella/Stella025.MP3"
     s "I can't believe they still have the old mill. Don't even get me started on how it used to smell."
-
+    hide stella happy
+    with dissolve
     "Penelope rolled her eyes. It was like talking to her grandma. She kept searching for people's reaction to her disembodied friend, but no one seemed to pay them any mind. It was just an average evening in Greensville."
 
     "As she breathed a sigh of relief, she noticed the only thing she could hear was her sneakers on the cold pavement. The night had gone uncharacteristically quiet."
@@ -165,7 +162,8 @@ label start:
     "Glancing around, Stella was nowhere to be seen. Panic started to creep up Penelope's throat as she doubled back, checking across the road and looking into alleyways."
 
     "Finally, she turned around the corner store and found Stella staring sorrowfully into an outcropped storefront."
-
+    show stella happy
+    with dissolve
     p "What happened? I thought I lost you."
 
     "Penelope followed her eyes, connecting the dots to a flashing movie poster."
@@ -174,7 +172,8 @@ label start:
 
     "Penelope smiled. Without a word, she marched through the door and up to the ticket counter."
 
-    #scene bg theater
+    scene bg theater
+    with dissolve
 
     p "Two for Objective Improbable, please."
 
@@ -185,12 +184,17 @@ label start:
     p "Oh -erm, I guess one for Objective Improbable, actually."
 
     "The clerk shrugged, accepting Penelope's outstretched allowance and traded her a ticket stub before returning to his game of staring off into space, oblivious to Stella squealing behind Penelope."
+   
+    show stella happy
+    with dissolve
+
     voice "Stella/Stella026.MP3"
     s "Eeeee, thankyouthankyouthankyou, my gracious, I can't believe I get to wake up and see an honest to god twenty first century movie for the first time in 70 years. Oh, what should I wear? Is my hair ok? Do you think I need a touch-up? Hey, where ya going?"
 
     "Penelope reappeared holding some popcorn bought with the rest of her weekly allowance, and they stepped into the theater together."
 
-    #scene black
+    scene black
+    with dissolve
 
     "She helped Stella find their seats. The theater was sparse with guests, with plenty of vacant rows in between."
     voice "Stella/Stella027.MP3"
@@ -200,20 +204,29 @@ label start:
 
     "Penelope was just starting to worry that the ghost would end up yapping through the whole movie when the lights dimmed and the curtain unfurled."
 
-    "Actors flashed into view, running across the top of a train in a dramatic chase. Penelope could feel her self-conscious nature and guilt itch at her stomach."
-
-    "What if the actress didn't like action movies? She probably preferred romance, drama, and musicals. Shifting in her seat, she glanced over at Stella."
+    "Actors flashed into view, running across the top of a train in a dramatic chase." 
+    
+    "Penelope got a gnawing feeling in her stomach. What if the actress didn't like action movies? She probably preferred romance, drama, and musicals." 
+    
+    "Shifting in her seat, she glanced over at Stella."
 
     "Her mouth was agape, eyes wide, utterly enchanted with the scene on screen."
 
-    #scene bg theater
+    scene bg theater
+    show stella happy
+    with dissolve
+
     voice "Stella/Stella028.MP3"
     s "That was INCREDIBLE! Can you believe they flew those aeroplanes upside down? I nearly jumped out of my skin. Why, that must have taken decades' worth of production. And the music was so thrilling, I can still feel it rattling my bones. If I had bones, that is."
 
     "Stella snorted at her own joke."
-
+    scene black
+    with dissolve
     "The pair compared their favorite moments, walking on air as they climbed the hill at the edge of town. A small box nailed to a sturdy wooden post crept into their view."
-
+    
+    scene bg library
+    show stella happy
+    with dissolve
     "The conversation began to trail away as the end of their walk neared. Penelope could feel the energy drain from Stella's voice with every step."
 
     p "What is it, what's wrong?"
@@ -265,6 +278,7 @@ label start:
 label harley:
 
     scene bg library
+    with dissolve
 
     "The light jerked off course and crashed straight into her, sending the two of them tumbling. Worried from the impact of the rogue fireball, Penelope winced, struggling to find her breath." 
     "It felt like an elephant was lying on her chest. A very furry elephant...panting heavily from its recent burst of zoomies." 
