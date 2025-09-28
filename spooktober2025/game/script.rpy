@@ -277,19 +277,102 @@ label start:
 
 label harley:
 
+    "The next night..."
     scene bg library
     with dissolve
 
-    "The light jerked off course and crashed straight into her, sending the two of them tumbling. Worried from the impact of the rogue fireball, Penelope winced, struggling to find her breath." 
-    "It felt like an elephant was lying on her chest. A very furry elephant...panting heavily from its recent burst of zoomies." 
-   
+    "As the leaves crunch beneath Penelope's feet, the familiar little box of stories beckoned her from the other side of the road." 
+    "Excited at the prospects of today's adventure, she raced over to flip the latch and open the small makeshift library posted on the curb. The usual books were still right where she left them, untouched, unmoving, but filled with potential."
+    "Penelope scanned the small wooden shelves for new stories. Moby Dick, The Great Gatsby, War and Peace. Nothing looked out of place this time. Surely, there has to be one."
+    "She furrowed her brow at the books again, taking a second, even a third look at each of them."
+    "Romeo and Juliet, To Kill a Mockingbird, Harley and Me, Game of Thrones, Bli...wait, Harley? That one misplaced letter almost ruined her day."
+    "Penelope rolled her eyes, already guessing at the next colorful character to this lonely graveyard."
+    p "Probably some unfunny prankster who needs me to write jokes for them, ha." 
+    "She slid the book out, finding it surprisingly thin, nothing more than a simple picture book. The ink was bright red against a white backdrop.  A picture on the front depicted two figures in a tight but gentle embrace."
+    "Penelope flipped open the book, looking up to greet her next friend."
+    "A moment passes."
+    "Then another. She looked around the empty field, worried she had chosen wrong. Maybe it was just a printing error."
+    show harley happy at offscreenright
+    show harley happy:
+        xalign 2.0
+        linear 1 xpos 0
+
+    "Suddenly, something barreled past her legs! It almost knocks Penelope to the ground, racing somewhere behind her vision."
+    "She turned her head and caught a glimpse, not of something ghostly pale or blue, but a blur of something much brighter, standing out against the misty, chilly morning."
+    show harley happy at offscreenright
+    show harley happy:
+        xalign 2.0
+        linear .5 xpos 0
+    
+    "It raced around her again, circling, but oddly, not threatening. She paused, excited with anticipation."
+    "In one quick movement, Penelope snapped around the other direction, determined to catch it off guard. The light jerked off course and crashed straight into her, sending the two of them tumbling."
+    "Worried from the impact of the rogue fireball, Penelope winced, struggling to find her breath. It felt like an elephant was lying on her chest."
+    "A very furry elephant...panting heavily from its recent burst of zoomies."
+    hide harley
     show harley happy
-    with dissolve
-   
+
     "She opened her eyes to the large grinning dog, sitting proudly on her chest, his face only an inch or two from hers."
+    p "Oh my god, don't do that."
+    "The dog sank further into her chest as her body relaxed, now relieved of the unsure danger."
+    "Penelope reached up to scratch the dog's head as he leaned heavily into her hand, his collar jingling with every bob of his head. On the end, in nice printed letters is the name: Harley."
+    p "Of course." 
+    "Pushing off the dew-soaked grass, Penelope tried to sit up. To Harley's reluctance, he shifted to lie awkwardly in the crook between her chest and knees, oblivious to her attempts at escape."
+    "She ran her hand down his back as he stared off at something in between the trees, his tail thumping happily on the ground, spraying her already soaked tee shirt with more dew."
+    p "Ok, Harley."
+    "His head turns at the recognition of his name, finally stepping back and giving her his full attention. Without him suffocating her, she could hardly tell he's a ghost at all."
+    "Instead of a slightly translucent pale color, Harley's golden retriever form seemed to be a warm tinted yellow."
+    "From a distance, he'd look just like any other dog...but in reality...Penelope pushed the harrowing thoughts away, knowing full well what they'd lead to."
+    "Harley started sniffing around Penelope's feet, curious about a new discovery he had made. As she stooped down to take a closer look, Penelope heard a loud crunch as Harley's jaws clamped together."
+    "Without hesitation, he took off, putting 10 feet between him and Penelope before checking back to make sure she was following."
+    p "Whatever it is, that can't be good." 
+    "Penelope took off, tearing after the mischievous pup, clearly proud of the prize trapped between his jaws."
+    "Penelope's shoes pounded against the twigs and high brush in hot pursuit of four bounding paws."
+    "Harley raced around a tall gravestone, poking his head out to check if she had seen him before taking off again, following the low brick wall in a fast-paced trot."
+    "Eager to cut him off, Penelope followed close behind, but with enough distance to quickly adjust once he reached the corner."
+    "Before she realized it, Harley had slipped behind a large bush and disappeared through the wrought iron fence."
+    "Penelope pushed the neglected, pointed twigs aside to reveal a small hole in the fence, barely big enough for her to squeeze through."
+    "Harley sat patiently on the other side, watching her, slowly gnawing on an estranged pine cone between his teeth."
+    "{i}Sigh{/i}. Penelope crawled on all fours, not looking forward to explaining the new mud stains on her jeans to her parents."
+    "Brushing off the dirt, she glanced around the large open field situated next to the cemetery. Clearly there wasn't a lot of interest in dead smelling real estate."
+    "Harley's tail thumped against the ground, congratulating her on her journey. His head approached low, gently placing the slobber-soaked pine cone at her feet."
+    "Leaping back, he braced for the chase, dropping his front legs and staring intently at the unmoving tree seed."
+    "Penelope gingerly plucked the pinecone from the ground, careful to avoid the areas that were clearly more damp than others."
+    "Harley's happy grin turned into brainless determination, the sides of his face relaxing into a droop as his eyes followed the makeshift ball."
+    "At least the summer softball season Penelope's parents signed her up for wouldn't go to waste."
+    "Winding up, she shifted her balance and launched the cone with all her might. Harley barreled after the toy, sprinting at top speed for the first time in decades."
+    "Penelope soaked in the simplicity of it all, as Harley triumphantly bounced back to her with his prize, his hurried golden form circling her legs, clearly looking for good boy pets with every pass."
+    p "Good job buddy, hehe. Now drop it."
+    "The dog hesitated, his glazed eyes staring up at her. She tried again, a little sterner-"
+    p "...Drop it." 
+    "Bowing his head, Harley pretended to relinquish his toy before pulling his head back at the last minute."
+    "Penelope gave him her best mom stare." 
+    p "Drop…it."
+    "Reluctantly, he complied, straining every muscle in his body with anticipation of the next throw."
+    "Hours seemed to fly by as Penelope and Harley tossed the pinecone, chased, and lay together in the grass, enjoying each other's company until the sun started to dip beneath the tall pine treeline."
+    "Penelope looked down at the happy little dog sprawled awkwardly across the lawn, head lying heavily in her lap, snoring away."
+    "She could see that his ghostly form was already fading, signaling the little time they had left. Penelope ran her finger beneath his slender chin, causing his back leg to twitch and kick."
+    p "Ah, Harley, you just wanted one more day of fun, didn't you?" 
+    "Her voice quivered. She wasn't sure if he understood what she was saying, or knew what an impact he had had, giving her a simple afternoon just to exist with him."
+    "And that was enough. She was enough."
+    p "Cmon, Harley." 
+    "The words caught in her throat as she tried to wipe away the guilt she felt, unsure if she'd see him again."
+    p "Time for a good long nap."
+    "She sat up, causing him to stir, roll in the dirt, and leap to his feet, happy to accompany her where she pleased."
+    "They walked together through the park and around the fenced graveyard toward the entrance. Each step felt like a weight being placed on Penelope's heart."
+    "When they reached the little library, Harley stuck his nose to the post, sniffing around for any sign of dog friends or rogue squirrels. Once he checked that it was safe, he turned back to her, proud and grinning, goofy as ever."
+    "Penelope knelt down next to him and pressed her forehead against his."
+    p "I know you have to go, and we probably won't see each other again, but I want you to know what a good boy you are. How much everyone must have loved you, and-" 
+    "Her words were cut off by a big sloppy kiss from Harley. His tongue flicked in and out of his mouth as he barraged her face with slobber."
+    "Harley looked up with knowing eyes, as if he already knew what she was going to say. She smiled, wishing she could have a few more minutes with him, but the sky was already shifting from pink to violet."
+    
+    show harley happy at slowdissolve
+
+    p "Good night, Harley. Sleep tight, I love you."
+    "As the last of the light vanished, so did Harley, his happy tail thumping in the grass, thanking her for the time she spent with him."
 
 
     scene black
+    with dissolve
 
     "THE END"
 
