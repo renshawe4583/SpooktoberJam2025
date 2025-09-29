@@ -2,9 +2,11 @@
 
 define s = Character(("Stella"), color="#97b9f8")
 define p = Character(("Penelope"), color="#97f8e0")
-define a = Character(("Attendant"), color="#9e97f8")
+define c = Character(("Clerk"), color="#def897")
+define a = Character(("Alan"), color="#c197f8")
+
 # custom screen transition - quickly fades to white, then back to the scene.
-define flash = Fade(0.1, 0.5, 0.5, color="#fff")
+define flash = Fade(0.1, 0.5, 0.5, color="#e5f8ff")
 # custom character fade out
 transform slowdissolve:
     alpha 1.00
@@ -179,7 +181,7 @@ label start:
 
     "The bored-looking attendant sized her up and down before glancing behind her."
 
-    a "You got a friend coming late? Show starts in seven minutes."
+    c "You got a friend coming late? Show starts in seven minutes."
 
     p "Oh -erm, I guess one for Objective Improbable, actually."
 
@@ -273,11 +275,448 @@ label start:
     scene black
     with fade
 
+    jump alan
+
+label alan:
+
+    '{i}The following night{/i}'
+   
+    "Penelope couldn't get the thoughts of the previous day out of her head. Was it all even real? Was Stella ok? What is up with that weird little library? She could hardly sleep, sneaking out of the house the next night to investigate the graveyard again."
+
+
+    "The path to the cemetery entrance was empty as she walked alone, fighting the breeze uphill. Finally, after passing its crest, she spotted the familiar source of her curiosities."
+
+    scene bg library with dissolve
+
+    "There it stood, the lone little library, out of place against the backdrop of the depressing resting place of those who lay beyond it."
+
+
+    "Penelope squinted through the paneled glass on the door, scanning every book title. Though she knew Stella's book was sitting on her nightstand, she half expected it to be here again."
+
+
+    "Her heart sank a little when she didn't recognize it among the stack."
+
+
+    "Except..."
+
+
+    "In its place sat a different book, one that didn't look nearly as ancient. Its glossy blue edges suggested it had recently come off the printer. She pulled it from the stack and scoffed at the title."
+
+
+    p '"{i}Temptation{/i}"? How sappy is that?'
+
+
+    "Penelope thumbed open the pages, and with a flash, the book burst to life, as if she had lit off a firework in her hand."
+
+
+    scene bg library
+    with flash
+
+
+    "She raised a hand to shield her eyes, less startled than her first experience. When the light show died down, hovering gently in front of her was a tall, pale man."
+    show alan happy with dissolve
+    "His dark, tousled hair made him look like he had just rolled out of bed, while his slender frame suggested he wasn't built for many athletics."
+       
+    "He didn't appear as elegant as Stella, sporting only a casual pair of jeans and an old sweatshirt. Sharp rectangular glasses framed the edges of his face as faint smile lines creased around his eyes."
+
+
+    voice "Alan/Alan0001.MP3"
+    a "Boy, was it stuffy in there, or was it just me?"
+
+
+    "The ghost seemed to be waiting for a hearty laugh or applause."
+
+
+    "There was none."
+
+
+    p "Er, what?"
+
+
+    "The man chuckled to himself, trying to recover."
+   
+    voice "Alan/Alan0002.MP3"
+    a "I kid, I kid. Not many people appreciate such low-brow humor these days. Boy, it's good to stretch again. How long have I been out?"
+
+
+    p "I, uh- wouldn't really know. My guess is it's probably on your gravestone."
+
+
+    voice "Alan/Alan0003.MP3"
+    a "My gravestone?"
+
+
+    "Reality started to sink in as he absentmindedly started to rub his throat."
+
+
+    voice "Alan/Alan0004.MP3"
+    a "Oh, yeah, I guess that would make sense. Begs the question of what I'm doing here now?"
+
+
+    "Penelope shrugged."
+
+
+    p "I'm not sure. Yesterday, I pulled a book from this library and met an old-timey actress. She was a bit ditzy, but sweet."
+
+
+    "Penelope's tone dropped a little."
+
+
+    p "She faded away shortly after we went to see a movie together."
+
+
+    voice "Alan/Alan0005.MP3"
+    a "You think it has anything to do with helping the ghosts you find in your books?"
+   
+    p "Could be. Only one way to test it. Anything I can help you with?"
+
+
+    "The strange specter paused to ponder once again."
+
+
+    voice "Alan/Alan0006.MP3"
+    a "Let's go find that gravestone. You think it's all alphabetized?"
+
+
+    p "Probably not."
+   
+    scene black
+    with dissolve
+
+
+    scene  bg library
+
+
+    "Together, the two wandered aimlessly around the graveyard, brushing off leaves and grime from headstones for a better look."
+   
+    p "What am I looking for again?"
+
+
+    voice "Alan/Alan0007.MP3"
+    a "Mound. Alan Mound. Couldn't have been too long, I hope."
+
+
+    "An hour passed before the pair arrived at a fresh plot with a wilting bouquet of flowers beside it. Alan stared down at his name carved pristinely into the stone face."
+
+
+    '{i}"Alan Mound. Dear son and friend, taken too early. May he rest in peace."{/i}'
+
+
+    p "You only passed away a couple of months ago."
+
+    show alan happy with dissolve
+
+    voice "Alan/Alan0008.MP3"
+    a "Yeah, sucked, too. Didn't know the cake I was eating had nuts in it. That, and the last EpiPen I had was defective. Always knew that's how I would be done in. I was, like, crazy allergic."
+
+
+    p "Yikes, that does suck. The only thing I get is hives when I take Peptobymol."
+
+
+    "Silence filled the crisp air."
+       
+    p "Do you think this helped at all?"
+
+
+    voice "Alan/Alan0009.MP3"
+    a "No. Not really. I thought it would be some kind of closure, but it's hard to see your own resting place."
+
+
+    p "Well, think of it this way. You're a ghost, you can do what you want now. You can fly, or pass through walls or, or..."
+
+
+    "Alan's eyes began to light up."
+
+
+    voice "Alan/Alan0010.MP3"
+    a "Or die! Oh my god, do you know what this means?"
+
+
+    p "You're too late to search for the fountain of youth?"
+
+
+    voice "Alan/Alan0011.MP3"
+    a "No, I-well, yes, but it also means nothing can kill me. Literally! All my life, my friends have gone on and on, raving about their favorite candy while I stared in from the outside."
+
+
+    voice "Alan/Alan0032.MP3"
+    a "Well, not this time. Now the unattainable is within reach! The crown jewel for all nut allergies everywhere. A Peanut Butter Cup!"
+
+
+    p "You can't be serious?"
+
+
+    voice "Alan/Alan0012.MP3"
+    a "I am serious, and don't call me surely!"
+     
+    p "I didn't even-"
+
+
+    voice "Alan/Alan0013.MP3"        
+    a "We have no time to waste!"
+       
+    "Before she could get another word in, Alan bolted off toward town. Penelope sighed and jogged toward the exit."
+
+
+    scene bg theater with dissolve
+
+
+    p "C'mon, through this door."
+
+
+    voice "Alan/Alan0014.MP3"
+    a "Here?"
+
+
+    p "Why not? This is the only place in town where they have king size. And besides, they overcharge the crap out of it anyway, they won't care."
+
+
+    "Penelope crept through the steel side entrance that was pressed tightly against the alley wall. The familiar sticky theater floor and smell of butter grazed her senses."
+
+
+    voice "Alan/Alan0015.MP3"
+    a "How did you know about this anyway?"
+
+
+    p "I saw it yesterday when hanging out with my other friend. Wasn't planning on using it already, but when in Rome."
+
+
+    voice "Alan/Alan0016.MP3"
+    a "Boy, your arms must be tired."
+
+
+    p "That's not how the joke goes!"
+
+
+    "Penelope hissed through gritted teeth, determined not to give Alan the satisfaction of making her crack. Maneuvering around the edge of the lobby, she darted quickly to avoid the notice from the ticket attendant."
+
+
+    "Behind her, Alan crept enthusiastically, long strides with tight veloceraptor arms, as if right out of a Scoopy-Boo show. She tried to swat him, but her hand passed right through."
+
+
+    c "Can I help you?"
+       
+    "Penelope snapped to attention, frozen in front of the concessions clerk. Whatever suspicious behavior she was exhibiting seemed to fly right over his head as he stared patiently back."
+
+
+    p "Uh, yeah. Peanut Butter Cup...please."
+
+
+    voice "Alan/Alan0017.MP3"      
+    a "King size."
+
+
+    p "King sized, I mean."
+
+
+    "The clerk begrudgingly switched the already acquired candy in his hand for the larger one and took the change."
+       
+    "{i}I'd better get an advance on my allowance if I keep all these ghost adventures going,{/i} Penelope thought to herself, tucking the orange wrapped delights into her sweater and backing away toward where she came."
+
+
+    "After a thorough scan, the pair slipped out of the side entrance, gingerly letting the door slide back into place behind them."
+
+
+    p "Finally..."
+    show peanut with dissolve
+    
+    "Penelope sighed, fishing out chocolate cups and holding them out to Alan."
+
+
+
+
+    p "Your prize."
+
+
+    voice "Alan/Alan0018.MP3"
+    a "YEEEEESSS!"
+
+    
+    "Alan reached for his forbidden fruit."
+
+    hide peanut with dissolve
+    "{i}*plap*{/i}"
+
+    show alan happy with dissolve
+    voice "Alan/Alan0019.MP3"
+    a "They fell..."
+
+
+    p "I can see that."
+
+
+    voice "Alan/Alan0020.MP3"
+    a "I can't hold them..."
+
+
+    p "I can see that, too."
+
+
+    "Alan's eyes seemed to well up, holding back tears. Penelope hesitated."
+
+
+    p "Are you going to-"
+
+
+    voice "Alan/Alan0021.MP3"
+    a "WHY, GOD?! WHY MUST YOU TORMENT ME STILL?!"
+
+
+    p "Ok, dude, chill!"
+
+
+    p "Maybe we can find another way."
+   
+
+
+    voice "Alan/Alan0022.MP3"
+    a "Like what?"
+
+
+
+
+    voice "Alan/Alan0033.MP3"
+    a "What do you want to do? Kill the Peanut Butter Cups? Stab them with a knife? Maybe we can dance around them and reverse seance them into the afterlife, huh?!"
+
+
+    p "Your ideas are as good as mine! I'm not exactly a ghost expert here. All these weird things only started happening yesterday."
+
+
+    "Alan shot up his hands in defense."
+
+
+    voice "Alan/Alan0023.MP3"
+    a "Look, sorry! It's just frustrating, ok. I though I finally cracked the code."
+
+
+    "The two stood in silence, letting themselves catch their breath."
+
+
+    voice "Alan/Alan0024.MP3"    
+    a "Regardless..."
+
+
+    voice "Alan/Alan0034.MP3"    
+    a "I appreciate you at least trying to help me. You didn't need to do that. Or needlessly sneak into a movie theater, but thats besides the point."
+
+
+    p "Yeah, sorry too. Wish I could have done more."
+
+
+
+    "Penelope scooped up candy from the ground."
+
+
+    p "Come on, let's head back, it's getting late anyway and I'm sure I look crazy screaming to myself in an alleyway."
+   
+    scene black
+    with dissolve
+
+
+    "The defeated walk back up the hill and through the cemetery was awkward and quiet, finally ending at a familiar gravestone. "
+   
+    scene bg library
+    show alan happy
+    with dissolve
+
+
+    voice "Alan/Alan0025.MP3"
+    a "So what happens now?"
+
+
+    p "I'm not sure. Stella seemed to know it was time to move on and kinda just…faded away."
+
+
+    "Alan gave her a sad smile."
+
+
+    voice "Alan/Alan0026.MP3"
+    a "I might not be able to have them, but it'd still be nice if one of us enjoyed the cups."
+
+
+    "Penelope's heart sank. She wanted to badly to help fulfill his wish."
+
+
+    "Silently, she knelt down before the tombstone, sinking her hands into the soft earth and carving out a small hole. Alan glanced toward her, puzzled as she ripped open the packaging and dumped a peanut butter cup into the cavity, covering it back over with the loose soil."
+
+
+    "Penelope leaned back, satisfied with her small gesture."
+
+
+    p "There, now we both have one."
+
+
+    voice "Alan/Alan0027.MP3"
+    a "That's alright."
+
+
+    voice "Alan/Alan0035.MP3"
+    a "Maybe life is just chasing an endless goal of fulfillment, always out of reach or never enough. Maybe it's just not meant to be. Maybe, one day, we can all learn to-OH MY GOD WHAT IS THAT!?!"
+   
+    window hide #hide the dialogue box
+    show ghostcup with moveinbottom
+    pause 60.0 #time until dialogue reappears or ctc
+    window auto
+   
+     
+
+    "The pair stared in shock as the small, translucent, glowing blue form of a peanut butter cup drifted up from the soil at Penelope's knees. Alan immediately shot down on all fours, watching it rise and levitate its way toward the heavens."
+   
+    p "No...freaking...way..."
+
+
+    voice "Alan/Alan0028.MP3"
+    a "That worked?! I can't be believe that worked! What did you do?"
+
+
+    p "I just buried it. As like, some kind of nice gesture. I didn't think it'd ghostify it."
+
+   
+    "Alan gasped, his eyes growing wider."
+
+
+    voice "Alan/Alan0029.MP3"
+    a "Graaveyard sooiill. Of course."
+
+
+    p "Was it even that? How the heck do we know? Hurry up and grab it before it floats away!"
+
+
+    "Alan's spindly pale arm reached out and plucked the cup from the air, bringing it close to his face to get a good whiff."
+
+
+    voice "Alan/Alan0030.MP3"
+    a "Oooh, yeah. It's finally time."
+
+
+    p "Wait wait wait."
+
+
+    "Penelope rushed to dig out another piece. She turned back, excited to cheers and celebrate with her friend, her heart stuttering as Alan's ghostly figure was already half gone."
+
+
+    "As dramatically as he could, Alan slowly raised the peanut butter cup to his mouth and took a ginormous bite. His cheeks puffed out like a chipmunk as he stuffed the rest in, savoring each slobbery bite that he could."
+
+
+    p "Well?"
+
+
+    "Alan smiled warmly at her, chocolate still smeared on his dorky face as he faded out of view."
+
+
+    voice "Alan/Alan0031.MP3"
+    a "It's alright."
+
+   
+    scene black
+    with fade
+
+
     jump harley
 
 label harley:
 
-    "The next night..."
+    "{i}The next night..."
     scene bg library
     with dissolve
 
@@ -309,7 +748,7 @@ label harley:
     "Worried from the impact of the rogue fireball, Penelope winced, struggling to find her breath. It felt like an elephant was lying on her chest."
     "A very furry elephant...panting heavily from its recent burst of zoomies."
     hide harley
-    show harley happy
+    show harley happy with dissolve
 
     "She opened her eyes to the large grinning dog, sitting proudly on her chest, his face only an inch or two from hers."
     p "Oh my god, don't do that."
@@ -333,7 +772,13 @@ label harley:
     "Penelope pushed the neglected, pointed twigs aside to reveal a small hole in the fence, barely big enough for her to squeeze through."
     "Harley sat patiently on the other side, watching her, slowly gnawing on an estranged pine cone between his teeth."
     "{i}Sigh{/i}. Penelope crawled on all fours, not looking forward to explaining the new mud stains on her jeans to her parents."
+    
+    scene bg park with dissolve
+    
     "Brushing off the dirt, she glanced around the large open field situated next to the cemetery. Clearly there wasn't a lot of interest in dead smelling real estate."
+    
+    show harley happy with dissolve
+    
     "Harley's tail thumped against the ground, congratulating her on her journey. His head approached low, gently placing the slobber-soaked pine cone at her feet."
     "Leaping back, he braced for the chase, dropping his front legs and staring intently at the unmoving tree seed."
     "Penelope gingerly plucked the pinecone from the ground, careful to avoid the areas that were clearly more damp than others."
@@ -354,11 +799,17 @@ label harley:
     p "Ah, Harley, you just wanted one more day of fun, didn't you?" 
     "Her voice quivered. She wasn't sure if he understood what she was saying, or knew what an impact he had had, giving her a simple afternoon just to exist with him."
     "And that was enough. She was enough."
-    p "Cmon, Harley." 
+    p "C'mon, Harley." 
     "The words caught in her throat as she tried to wipe away the guilt she felt, unsure if she'd see him again."
     p "Time for a good long nap."
-    "She sat up, causing him to stir, roll in the dirt, and leap to his feet, happy to accompany her where she pleased."
+    "She sat up, causing him to stir, roll in the dirt, and leap to his feet, happy to accompany her where she pleased."    
+    
+    scene bg library with dissolve
+    
     "They walked together through the park and around the fenced graveyard toward the entrance. Each step felt like a weight being placed on Penelope's heart."
+    
+    show harley happy with dissolve
+    
     "When they reached the little library, Harley stuck his nose to the post, sniffing around for any sign of dog friends or rogue squirrels. Once he checked that it was safe, he turned back to her, proud and grinning, goofy as ever."
     "Penelope knelt down next to him and pressed her forehead against his."
     p "I know you have to go, and we probably won't see each other again, but I want you to know what a good boy you are. How much everyone must have loved you, and-" 
@@ -371,8 +822,7 @@ label harley:
     "As the last of the light vanished, so did Harley, his happy tail thumping in the grass, thanking her for the time she spent with him."
 
 
-    scene black
-    with dissolve
+    scene black with dissolve
 
     "THE END"
 
