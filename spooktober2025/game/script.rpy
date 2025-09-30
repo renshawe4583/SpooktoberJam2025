@@ -47,10 +47,11 @@ label start:
     voice "Stella/Stella001.MP3"
     s "Well, I'llll be."
 
-    show stella happy
+    show stella looking
     with dissolve
 
     "Penelope opened her mouth to scream again, but no sound came out. Her eyes filled with the image of the floating translucent lady smiling cheerfully down at her."
+    show stella happy
     voice "Stella/Stella002.MP3"
     s "Aren't you just the cutest little thing?"
 
@@ -66,6 +67,7 @@ label start:
     voice "Stella/Stella005.MP3"
     s "Where are my manners? Why, I'm the great Stella Jackson."
 
+    show stella looking
     "A flash of hesitation seemed to cross her eyes as she looked down at her translucent form."
     voice "Stella/Stella006.MP3"
     s "As for what, it appears that I am some apparition of sorts."
@@ -83,6 +85,7 @@ label start:
     s "Well, if it ain't my old autobiography. I remember writing this between takes on Up and Away."
 
     "Stella thumbed through the now still pages before pressing the book close to her chest."
+    show stella happy
     voice "Stella/Stella010.MP3"
     s "My, what gorgeous days those were. Bright lights, caviar, flip tops, the BOYS!"
 
@@ -101,6 +104,7 @@ label start:
     p "Sooo, what happened?"
 
     "The actress's expression dropped."
+    show stella looking
     voice "Stella/Stella014.MP3"
     s "I was...on the way to a premiere. It was shaping up to be my biggest night yet. The cameras were flashing, the crowd was cheering, I guess with all the commotion, I didn't notice the two headlights coming my way."
 
@@ -109,6 +113,7 @@ label start:
     s "But that's all in the past now. Boy, I sure wish I could have seen that show."
 
     p "Why don't you? Go see a show, I mean. You have all eternity, don't you?"
+    show stella happy
     voice "Stella/StellaLaugh.MP3"       
     "Stella laughed."
     voice "Stella/Stella016.MP3"        
@@ -117,7 +122,7 @@ label start:
     "Penelope paused, waiting for the moment to catch up with her new airhead friend. Moments passed before she spoke."
 
     p "Buuut, you're not in the cemetery."
-
+    show stella looking
     "Stella blinked, unsure of what she had just heard, before turning to notice the two of them standing before the library outside of the wrought iron gate."
     voice "Stella/Stella017.MP3"
     s "Mercy me, it would appear so."
@@ -127,6 +132,7 @@ label start:
     s "Do you know what this means?"
 
     p "You're no longer under house arrest?"
+    show stella happy
     voice "Stella/Stella019.MP3"
     s "Why, we can go have the night of our lives, silly!"
 
@@ -135,12 +141,13 @@ label start:
     s "Ooo, we can go to the supermarket, or dress shoppin', or dance to the jukebox, or-"
 
     p "Woah whoa whoa, won't that freak everyone out to see a ghost wandering around town?"
-
+    show stella looking
     "Stella paused to think."
     voice "Stella/Stella021.MP3"        
     s "You got over it rather quickly, wouldn't cha say?"
 
     p "Touche."
+    show stella happy
     voice "Stella/Stella022.MP3"        
     s "This is gonna be so much fun! What should we do first?"
 
@@ -153,9 +160,10 @@ label start:
     "Penelope walked down the hill toward the small town at the bottom, Stella hovering gleefully behind her, chatting away."
     voice "Stella/Stella024.MP3"
     s "{i}Gasp,{/i} I remember when that was the local sock hop bowlin' alley. Over there, they used to sell everything from vacuums to washers, everything an average housewife would need."
+    show stella looking
     voice "Stella/Stella025.MP3"
     s "I can't believe they still have the old mill. Don't even get me started on how it used to smell."
-    hide stella happy
+    hide stella 
     with dissolve
     "Penelope rolled her eyes. It was like talking to her grandma. She kept searching for people's reaction to her disembodied friend, but no one seemed to pay them any mind. It was just an average evening in Greensville."
 
@@ -164,7 +172,7 @@ label start:
     "Glancing around, Stella was nowhere to be seen. Panic started to creep up Penelope's throat as she doubled back, checking across the road and looking into alleyways."
 
     "Finally, she turned around the corner store and found Stella staring sorrowfully into an outcropped storefront."
-    show stella happy
+    show stella looking
     with dissolve
     p "What happened? I thought I lost you."
 
@@ -227,7 +235,7 @@ label start:
     "The pair compared their favorite moments, walking on air as they climbed the hill at the edge of town. A small box nailed to a sturdy wooden post crept into their view."
     
     scene bg library
-    show stella happy
+    show stella looking
     with dissolve
     "The conversation began to trail away as the end of their walk neared. Penelope could feel the energy drain from Stella's voice with every step."
 
@@ -238,18 +246,21 @@ label start:
     s "I get the feeling, this might have been a one-time thing. Something's tellin' me that it's going to be a very long time before we see each other again."
 
     "Penelope's throat became tight, not wanting to acknowledge the end to their story. Stella turned to face her, grinning from ear to ear."
+    show stella happy
     voice "Stella/Stella030.MP3"
     s "Thank you, sweetheart. This has been the best evening a girl could ask for."
 
     p "But-why? I don't understand. Why do you have to go?"
 
     "Stella drifted closer to Penelope, gently folding the book into her hands."
+    show stella looking
     voice "Stella/Stella031.MP3"
-    s "When I was…asleep, I always felt like I had been cheated out of the night that I passed. While I had come to accept my circumstances, it always bothered me."
+    s "When I was...asleep, I always felt like I had been cheated out of the night that I passed. While I had come to accept my circumstances, it always bothered me."
     voice "Stella/Stella032.MP3"
     s "All I wanted was one more night. One night at the movies, where I could be myself, and not a character I play on screen."
 
     "Stella's gentle and icy hand brushed the hair out of Penelope's view as her own pearly eyes welled up with tears."
+    show stella happy
     voice "Stella/Stella033.MP3"
     s "And darlin', you did exactly that. And I can't thank you enough. For being you, n' all."
 
@@ -323,7 +334,7 @@ label alan:
     voice "Alan/Alan0001.MP3"
     a "Boy, was it stuffy in there, or was it just me?"
 
-
+    show alan grin
     "The ghost seemed to be waiting for a hearty laugh or applause."
 
 
@@ -332,7 +343,7 @@ label alan:
 
     p "Er, what?"
 
-
+    show alan happy
     "The man chuckled to himself, trying to recover."
    
     voice "Alan/Alan0002.MP3"
@@ -341,14 +352,14 @@ label alan:
 
     p "I, uh- wouldn't really know. My guess is it's probably on your gravestone."
 
-
+    show alan sad
     voice "Alan/Alan0003.MP3"
     a "My gravestone?"
 
 
     "Reality started to sink in as he absentmindedly started to rub his throat."
 
-
+    show alan happy
     voice "Alan/Alan0004.MP3"
     a "Oh, yeah, I guess that would make sense. Begs the question of what I'm doing here now?"
 
@@ -424,7 +435,7 @@ label alan:
 
     p "Well, think of it this way. You're a ghost, you can do what you want now. You can fly, or pass through walls or, or..."
 
-
+    show alan grin
     "Alan's eyes began to light up."
 
 
@@ -434,24 +445,24 @@ label alan:
 
     p "You're too late to search for the fountain of youth?"
 
-
+    show alan happy
     voice "Alan/Alan0011.MP3"
     a "No, I-well, yes, but it also means nothing can kill me. Literally! All my life, my friends have gone on and on, raving about their favorite candy while I stared in from the outside."
 
-
+    show alan grin
     voice "Alan/Alan0032.MP3"
     a "Well, not this time. Now the unattainable is within reach! The crown jewel for all nut allergies everywhere. A Peanut Butter Cup!"
 
-
+    
     p "You can't be serious?"
 
-
+    show alan happy
     voice "Alan/Alan0012.MP3"
     a "I am serious, and don't call me surely!"
      
     p "I didn't even-"
 
-
+    show alan grin
     voice "Alan/Alan0013.MP3"        
     a "We have no time to waste!"
        
@@ -537,7 +548,7 @@ label alan:
     hide peanut with dissolve
     "{i}*plap*{/i}"
 
-    show alan happy with dissolve
+    show alan sad with dissolve
     voice "Alan/Alan0019.MP3"
     a "They fell..."
 
@@ -591,7 +602,7 @@ label alan:
 
     "The two stood in silence, letting themselves catch their breath."
 
-
+    show alan happy
     voice "Alan/Alan0024.MP3"    
     a "Regardless..."
 
@@ -654,17 +665,17 @@ label alan:
     a "Maybe life is just chasing an endless goal of fulfillment, always out of reach or never enough. Maybe it's just not meant to be. Maybe, one day, we can all learn to-OH MY GOD WHAT IS THAT!?!"
    
     window hide #hide the dialogue box
-    show ghostcup with moveinbottom
+    #show ghostcup with moveinbottom
+    show ghostcup at Move((.35, .9), (.35, .5), 2.0)
     pause 60.0 #time until dialogue reappears or ctc
     window auto
    
-     
 
     "The pair stared in shock as the small, translucent, glowing blue form of a peanut butter cup drifted up from the soil at Penelope's knees. Alan immediately shot down on all fours, watching it rise and levitate its way toward the heavens."
    
     p "No...freaking...way..."
 
-
+    show alan grin
     voice "Alan/Alan0028.MP3"
     a "That worked?! I can't be believe that worked! What did you do?"
 
@@ -683,8 +694,8 @@ label alan:
 
 
     "Alan's spindly pale arm reached out and plucked the cup from the air, bringing it close to his face to get a good whiff."
-
-
+    hide ghostcup with dissolve
+    show alan happy
     voice "Alan/Alan0030.MP3"
     a "Oooh, yeah. It's finally time."
 
@@ -700,7 +711,7 @@ label alan:
 
     p "Well?"
 
-
+    show alan grin at slowdissolve
     "Alan smiled warmly at her, chocolate still smeared on his dorky face as he faded out of view."
 
 
