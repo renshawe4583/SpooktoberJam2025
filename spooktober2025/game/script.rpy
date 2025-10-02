@@ -12,18 +12,58 @@ transform slowdissolve:
     alpha 1.00
     easein 15.0 alpha 0.00
 
+init python:
+    # first-person blink
+    def eyewarp(x):
+        return x ** 1.33
+    eyeopen = ImageDissolve("eye.png", 2, ramplen=128, reverse=False, time_warp=eyewarp)
+    eyeclose = ImageDissolve("eye.png", 2, ramplen=128, reverse=True, time_warp=eyewarp)
+
 # The game starts here.
 
 label start:
 
     #play music main_theme if_changed
-    
-    scene bg library
 
+    
+
+    p "Just great."
+
+    "Penelope trudged up the quiet hill, still fuming at her most recent argument with her parents."
+
+    "She had to get out of that house just to get some air. In her huff, Penelope had picked a direction and taken off, wandering aimlessly without a thought. It wasn't long before she realized she needed to find her way home."
+
+    "She looked back down at the sleepy town her family had just moved to. There were hardly any cars on the road, no kids in the streets, just a vacant main street with a handful of local mom and pop shops."
+
+    "Only a speck in the distance, the old slanted roof across the far end that her parents now called home."
+
+    "But not her."
+
+    "Still feeling the sting of spite, Penelope continued to climb; the muscles in her legs protested as she pressed on. She sidestepped a puddle, kicking up a batch of freshly fallen leaves as she went."
+
+    "As they drifted to the pavement, her eyes followed their path."
+
+    "A long wrought iron fence stretched across the top of the hill, protecting the rows of forgotten gravestones that lay nestled inside."
+
+    "Outside its gates rose a wooden post with a small house-like structure nailed to the top."
+
+    "Penelope blinked. It was one of those novelty miniature libraries people posted outside their houses and along bike trails."
+
+    p "What is it doing way out here?"
+
+    "Before she realized it, her feet were already carrying her closer."
+
+    
+    scene bg library with eyeopen
+    window hide 
+    pause 3.0
+    window auto
    
     "Curious to what treasures awaited in this little lost library, Penelope pulled at the knob screwed onto the little door, but it didn't budge. She furrowed her brow and tugged harder. The rusted metal hinges creaked ominously, greeting her entry."
 
-    "A cloud of dust puffed in her face and she coughed, waving it away. Inside were two rows of weathered books, stacked neatly end to end, each one looking as old as the last. She brushed away some grime, tilting her head to get a better look at the titles along the edges."
+    "A cloud of dust puffed in her face and she coughed, waving it away. Inside were two rows of weathered books, stacked neatly end to end, each one looking as old as the last."
+
+    "She brushed away some grime, tilting her head to get a better look at the titles along the edges."
 
     "Penelope's dismay grew as she recognized many of the titles, yet had very little interest in reading them. Classics, mostly, but nothing that seemed to excite her."
 
@@ -35,14 +75,20 @@ label start:
 
     '{i}"Mov- -era, By Stella Jac-."'
 
-    "Turning it over, Penelope's curiosity got the better of her as she flipped to the title page."
+    "Turning it over, Penelope's intrigue got the better of her as she flipped to the title page."
         
     scene bg library
     with flash
         
-    "Penelope screamed and dropped the book as if it were made of red-hot metal. Pages flipped furiously between the covers, some ripping out entirely and swirling above as if caught in a wild tornado. Pale blue light flashed in bursts like a firecracker." 
+    "Penelope screamed and dropped the book as if it were made of red-hot metal." 
 
-    "Penelope watched in horror as the long, slender form of delicate fingers rose from the book. An entire person seemed to rise out of the book, hovering gingerly in the air and stretching their arms, yawning loudly." 
+    "Pages flipped furiously between the covers, some ripping out entirely and swirling above as if caught in a wild tornado. Pale blue light flashed in bursts like a firecracker."
+
+    "Penelope watched in horror as the long, slender form of delicate fingers rose from the book. An entire person seemed to rise out of the book, hovering gingerly in the air and stretching their arms, yawning loudly."
+
+    "Stretching into the night was a attractive young woman. A pressed blue dress hugged tightly around her waist."
+
+    "She blinked away the drowziness from her elegant doe eyes and ran a hand through her bouncy light hair that hung in curls down to her shoulders."
     
     voice "Stella/Stella001.MP3"
     s "Well, I'llll be."
@@ -151,9 +197,9 @@ label start:
     voice "Stella/Stella022.MP3"        
     s "This is gonna be so much fun! What should we do first?"
 
-    "Penelope glanced down at her half-dead watch, ticking away at her curfew."
+    "Penelope glanced down at her half-dead watch, ticking away at her curfew. She felt a tinge of heat in her chest."
 
-    p "Nothing too crazy, I need to be back by nine."
+    p "That sounds fine, I've got nowhere to be. So long as it's not too late."
     voice "Stella/Stella023.MP3"        
     s "Oh, of course, dear. We'll have a night on the town and be back in a jiffy."
 
@@ -165,7 +211,7 @@ label start:
     s "I can't believe they still have the old mill. Don't even get me started on how it used to smell."
     hide stella 
     with dissolve
-    "Penelope rolled her eyes. It was like talking to her grandma. She kept searching for people's reaction to her disembodied friend, but no one seemed to pay them any mind. It was just an average evening in Greensville."
+    "Penelope rolled her eyes. It was like talking to her grandma. She kept searching for people's reaction to her disembodied friend, but no one seemed to pay them any mind."
 
     "As she breathed a sigh of relief, she noticed the only thing she could hear was her sneakers on the cold pavement. The night had gone uncharacteristically quiet."
 
@@ -201,7 +247,7 @@ label start:
     voice "Stella/Stella026.MP3"
     s "Eeeee, thankyouthankyouthankyou, my gracious, I can't believe I get to wake up and see an honest to god twenty first century movie for the first time in 70 years. Oh, what should I wear? Is my hair ok? Do you think I need a touch-up? Hey, where ya going?"
 
-    "Penelope reappeared holding some popcorn bought with the rest of her weekly allowance, and they stepped into the theater together."
+    "Penelope reappeared holding some popcorn bought with the rest of her meek budget. Gesturing towards the swinging door, they stepped into the theater together."
 
     scene black
     with dissolve
@@ -216,7 +262,7 @@ label start:
 
     "Actors flashed into view, running across the top of a train in a dramatic chase." 
     
-    "Penelope got a gnawing feeling in her stomach. What if the actress didn't like action movies? She probably preferred romance, drama, and musicals." 
+    "Penelope got a gnawing feeling in her stomach. What if the actress didn't like action movies? She probably preferred romance, drama, or a cheesy musical." 
     
     "Shifting in her seat, she glanced over at Stella."
 
@@ -317,7 +363,7 @@ label alan:
     p '"{i}Temptation{/i}"? How sappy is that?'
 
 
-    "Penelope thumbed open the pages, and with a flash, the book burst to life, as if she had lit off a firework in her hand."
+    "Penelope thumbed open the pages, and with a flash, the book burst to life."
 
 
     scene bg library
@@ -326,7 +372,7 @@ label alan:
 
     "She raised a hand to shield her eyes, less startled than her first experience. When the light show died down, hovering gently in front of her was a tall, pale man."
     show alan happy with dissolve
-    "His dark, tousled hair made him look like he had just rolled out of bed, while his slender frame suggested he wasn't built for many athletics."
+    "His dark, tousled hair made him look like he had just rolled out of bed, while his slender frame suggested he wasn't built for much athletics."
        
     "He didn't appear as elegant as Stella, sporting only a casual pair of jeans and an old sweatshirt. Sharp rectangular glasses framed the edges of his face as faint smile lines creased around his eyes."
 
@@ -394,10 +440,6 @@ label alan:
     scene black
     with dissolve
 
-
-    scene  bg library
-
-
     "Together, the two wandered aimlessly around the graveyard, brushing off leaves and grime from headstones for a better look."
    
     p "What am I looking for again?"
@@ -405,6 +447,8 @@ label alan:
 
     voice "Alan/Alan0007.MP3"
     a "Mound. Alan Mound. Couldn't have been too long, I hope."
+
+    scene  bg library
 
 
     "An hour passed before the pair arrived at a fresh plot with a wilting bouquet of flowers beside it. Alan stared down at his name carved pristinely into the stone face."
@@ -534,8 +578,6 @@ label alan:
     "Penelope sighed, fishing out chocolate cups and holding them out to Alan."
 
 
-
-
     p "Your prize."
 
 
@@ -546,7 +588,7 @@ label alan:
     "Alan reached for his forbidden fruit."
 
     hide peanut with dissolve
-    "{i}*plap*{/i}"
+    "{i}*plop*{/i}"
 
     show alan sad with dissolve
     voice "Alan/Alan0019.MP3"
@@ -579,11 +621,8 @@ label alan:
     p "Maybe we can find another way."
    
 
-
     voice "Alan/Alan0022.MP3"
     a "Like what?"
-
-
 
 
     voice "Alan/Alan0033.MP3"
@@ -648,7 +687,9 @@ label alan:
     "Penelope's heart sank. She wanted to badly to help fulfill his wish."
 
 
-    "Silently, she knelt down before the tombstone, sinking her hands into the soft earth and carving out a small hole. Alan glanced toward her, puzzled as she ripped open the packaging and dumped a peanut butter cup into the cavity, covering it back over with the loose soil."
+    "Silently, she knelt down before the tombstone, sinking her hands into the soft earth and carving out a small hole."
+
+    "Alan glanced toward her, puzzled as she ripped open the packaging and dumped a peanut butter cup into the cavity, covering it back over with the loose soil."
 
 
     "Penelope leaned back, satisfied with her small gesture."
@@ -680,7 +721,7 @@ label alan:
     a "That worked?! I can't be believe that worked! What did you do?"
 
 
-    p "I just buried it. As like, some kind of nice gesture. I didn't think it'd ghostify it."
+    p "I just buried it. As like, some kind of nice offering. I didn't think it'd ghostify it."
 
    
     "Alan gasped, his eyes growing wider."
@@ -737,7 +778,7 @@ label harley:
     "She furrowed her brow at the books again, taking a second, even a third look at each of them."
     "Romeo and Juliet, To Kill a Mockingbird, Harley and Me, Game of Thrones, Bli...wait, Harley? That one misplaced letter almost ruined her day."
     "Penelope rolled her eyes, already guessing at the next colorful character to this lonely graveyard."
-    p "Probably some unfunny prankster who needs me to write jokes for them, ha." 
+    p "Probably some unfunny prankster who needs me to write jokes for them." 
     "She slid the book out, finding it surprisingly thin, nothing more than a simple picture book. The ink was bright red against a white backdrop.  A picture on the front depicted two figures in a tight but gentle embrace."
     "Penelope flipped open the book, looking up to greet her next friend."
     "A moment passes."
@@ -748,7 +789,7 @@ label harley:
         linear 1 xpos 0
 
     "Suddenly, something barreled past her legs! It almost knocks Penelope to the ground, racing somewhere behind her vision."
-    "She turned her head and caught a glimpse, not of something ghostly pale or blue, but a blur of something much brighter, standing out against the misty, chilly morning."
+    "She turned her head and caught a glimpse, not of something ghostly pale or blue, but a blur of something much brighter, standing out against the misty, chilly night."
     show harley happy at offscreenright
     show harley happy:
         xalign 2.0
@@ -756,10 +797,16 @@ label harley:
     
     "It raced around her again, circling, but oddly, not threatening. She paused, excited with anticipation."
     "In one quick movement, Penelope snapped around the other direction, determined to catch it off guard. The light jerked off course and crashed straight into her, sending the two of them tumbling."
+
+    scene black
+    with flash
+
     "Worried from the impact of the rogue fireball, Penelope winced, struggling to find her breath. It felt like an elephant was lying on her chest."
     "A very furry elephant...panting heavily from its recent burst of zoomies."
-    hide harley
-    show harley happy with dissolve
+    #hide harley
+    show bg library
+    show harley happy 
+    with eyeopen
 
     "She opened her eyes to the large grinning dog, sitting proudly on her chest, his face only an inch or two from hers."
     p "Oh my god, don't do that."
@@ -773,11 +820,11 @@ label harley:
     "Instead of a slightly translucent pale color, Harley's golden retriever form seemed to be a warm tinted yellow."
     "From a distance, he'd look just like any other dog...but in reality...Penelope pushed the harrowing thoughts away, knowing full well what they'd lead to."
     "Harley started sniffing around Penelope's feet, curious about a new discovery he had made. As she stooped down to take a closer look, Penelope heard a loud crunch as Harley's jaws clamped together."
-    "Without hesitation, he took off, putting 10 feet between him and Penelope before checking back to make sure she was following."
+    "Without hesitation, he took off, putting ten feet between him and Penelope before checking back to make sure she was following."
     p "Whatever it is, that can't be good." 
     "Penelope took off, tearing after the mischievous pup, clearly proud of the prize trapped between his jaws."
     "Penelope's shoes pounded against the twigs and high brush in hot pursuit of four bounding paws."
-    "Harley raced around a tall gravestone, poking his head out to check if she had seen him before taking off again, following the low brick wall in a fast-paced trot."
+    "Harley raced around a tall gravestone, poking his head out to check if she had seen him before taking off again, following the edge of the cemetary in a fast-paced trot."
     "Eager to cut him off, Penelope followed close behind, but with enough distance to quickly adjust once he reached the corner."
     "Before she realized it, Harley had slipped behind a large bush and disappeared through the wrought iron fence."
     "Penelope pushed the neglected, pointed twigs aside to reveal a small hole in the fence, barely big enough for her to squeeze through."
@@ -790,25 +837,25 @@ label harley:
     
     show harley happy with dissolve
     
-    "Harley's tail thumped against the ground, congratulating her on her journey. His head approached low, gently placing the slobber-soaked pine cone at her feet."
+    "Harley's tail swept across the ground wildly, congratulating her on her journey. His head approached low, gently placing the slobber-soaked pine cone at her feet."
     "Leaping back, he braced for the chase, dropping his front legs and staring intently at the unmoving tree seed."
-    "Penelope gingerly plucked the pinecone from the ground, careful to avoid the areas that were clearly more damp than others."
+    "Penelope delicately plucked the pinecone from the ground, careful to avoid the areas that were clearly more damp than others."
     "Harley's happy grin turned into brainless determination, the sides of his face relaxing into a droop as his eyes followed the makeshift ball."
     "At least the summer softball season Penelope's parents signed her up for wouldn't go to waste."
     "Winding up, she shifted her balance and launched the cone with all her might. Harley barreled after the toy, sprinting at top speed for the first time in decades."
     "Penelope soaked in the simplicity of it all, as Harley triumphantly bounced back to her with his prize, his hurried golden form circling her legs, clearly looking for good boy pets with every pass."
-    p "Good job buddy, hehe. Now drop it."
+    p "Good job buddy. Now drop it."
     "The dog hesitated, his glazed eyes staring up at her. She tried again, a little sterner-"
     p "...Drop it." 
-    "Bowing his head, Harley pretended to relinquish his toy before pulling his head back at the last minute."
+    "Bowing his snout, Harley pretended to relinquish his toy before pulling his head back at the last minute."
     "Penelope gave him her best mom stare." 
     p "Drop…it."
     "Reluctantly, he complied, straining every muscle in his body with anticipation of the next throw."
     "Hours seemed to fly by as Penelope and Harley tossed the pinecone, chased, and lay together in the grass, enjoying each other's company until the sun started to dip beneath the tall pine treeline."
-    "Penelope looked down at the happy little dog sprawled awkwardly across the lawn, head lying heavily in her lap, snoring away."
+    "Penelope looked down at the happy dog sprawled awkwardly across the lawn, head lying heavily in her lap, snoring away."
     "She could see that his ghostly form was already fading, signaling the little time they had left. Penelope ran her finger beneath his slender chin, causing his back leg to twitch and kick."
     p "Ah, Harley, you just wanted one more day of fun, didn't you?" 
-    "Her voice quivered. She wasn't sure if he understood what she was saying, or knew what an impact he had had, giving her a simple afternoon just to exist with him."
+    "Her voice quivered. She wasn't sure if he understood what she was saying, or knew what an impact he had had, giving her a simple time just to exist with him."
     "And that was enough. She was enough."
     p "C'mon, Harley." 
     "The words caught in her throat as she tried to wipe away the guilt she felt, unsure if she'd see him again."
@@ -825,12 +872,12 @@ label harley:
     "Penelope knelt down next to him and pressed her forehead against his."
     p "I know you have to go, and we probably won't see each other again, but I want you to know what a good boy you are. How much everyone must have loved you, and-" 
     "Her words were cut off by a big sloppy kiss from Harley. His tongue flicked in and out of his mouth as he barraged her face with slobber."
-    "Harley looked up with knowing eyes, as if he already knew what she was going to say. She smiled, wishing she could have a few more minutes with him, but the sky was already shifting from pink to violet."
+    "Harley looked up with knowing eyes, as if he already knew what she was going to say. She smiled, wishing she could have a few more minutes with him, but the sky was already shifting from violet to pink."
     
     show harley happy at slowdissolve
 
     p "Good night, Harley. Sleep tight, I love you."
-    "As the last of the light vanished, so did Harley, his happy tail thumping in the grass, thanking her for the time she spent with him."
+    "As the night vanished into the morning sun, so did Harley, his happy tail thumping in the grass, thanking her for the time she spent with him."
 
 
     scene black with dissolve

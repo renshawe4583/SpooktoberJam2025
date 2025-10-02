@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("spooktober2025")
+define config.name = _("The Little Library of Spirits")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -29,7 +29,25 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""New to her small town, Penelope discovers a hidden little library nestled against a lone cemetery. Little does she know, the books it holds have secrets of their own. A heartwarming journey of friends and mystery seems to await her in every page.
+
+
+Submission for Spooktober 7th Annual Visual Novel Jam
+
+
+CREDITS
+
+Erin DJV: Producer, Lead Artist, Programmer
+
+Connor Olson: Writer
+
+Connor Roisum: Artist, Voice Actor
+
+Ren LaCourse: Voice Actor
+
+Helena Puckett: Music
+
+
 """)
 
 
@@ -37,7 +55,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "spooktober2025"
+define build.name = "libraryofspirits"
 
 
 ## Sounds and music ############################################################
