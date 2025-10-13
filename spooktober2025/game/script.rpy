@@ -61,7 +61,7 @@ label start:
    
     "Curious to what treasures awaited in this little lost library, Penelope pulled at the knob screwed onto the little door, but it didn't budge. She furrowed her brow and tugged harder. The rusted metal hinges creaked ominously, greeting her entry."
 
-    "A cloud of dust puffed in her face and she coughed, waving it away. Inside were two rows of weathered books, stacked neatly end to end, each one looking as old as the last."
+    "A cloud of dust puffed in her face and she coughed, waving it away. Inside were rows of weathered books, each one looking as old as the last."
 
     "She brushed away some grime, tilting her head to get a better look at the titles along the edges."
 
